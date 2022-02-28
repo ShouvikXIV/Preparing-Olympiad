@@ -34,7 +34,6 @@ int main()
         }
     }
 
-    int fd = 0;
     int c = 0;
     for(int i = 0;i<(1<<n);i++)
     {
@@ -49,14 +48,14 @@ int main()
         if(v.size()>=2)
         {
 
-        int fu = 0;
+        int fa = 0;
         vector<int>::iterator it;
         for(it = v.begin();it!=v.end();it++)
         {
-            fu+=*it;
+            fa+=*it;
         }
 
-        if(l<=fu&&fu<=r)
+        if(l<=fa&&fa<=r)
         {
             sort(v.begin(),v.end());
             vector<int>::iterator it1 = v.begin();
